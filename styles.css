@@ -21,20 +21,54 @@ body {
 
 .links {
     text-decoration: none;
+    color: black;
 }
 .link-primary {
     padding: 0.5rem 1rem;
     background-color: var(--main-color);
     border-radius: 0.7rem;
-    color: black;
 }
 .link-secondary {
     padding: 0.5rem 1rem;
     border: 1px solid var(--main-color);
     border-radius: 0.7rem;
-    color: black;
 }
 
 hr {
     margin: 2rem 0rem;
 }
+
+.non-bullet-items {
+    list-style: none;
+}
+
+.list .list-inline-item {
+    display: inline;
+    padding: 0rem 1rem;
+}
+ .navigation {
+     background-color: var(--main-color);
+     padding: 1rem;
+    margin: auto;
+}
+
+.navigation .list-inline-item {
+   display: inline;
+   padding: 1rem;
+}
+
+.navigation .non-bullet-items {
+    text-align: right;
+}
+
+.header {
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+}
+
+.header .header-img {
+    max-width: 350px;
+    padding: 1rem 1rem;
+}
+

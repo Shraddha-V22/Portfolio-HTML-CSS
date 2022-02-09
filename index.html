@@ -35,20 +35,20 @@
 
     <h2>@lists</h2>
     <h1>unordered list</h1>
-    <ul>
+    <ul class="list non-bullet-items">
         <li>first item</li>
         <li>second item</li>
         <li>third item</li>
     </ul>
     <h1>unordered inline list</h1>
-    <ul>
-        <li>first item</li>
-        <li>second item</li>
-        <li>third item</li>
+    <ul class="list non-bullet-items">
+        <li class="list-inline-item">first item</li>
+        <li class="list-inline-item">second item</li>
+        <li class="list-inline-item">third item</li>
     </ul>
 
     <h1>ordered reverse list</h1>
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>bread</li>
         <li>butter</li>
@@ -57,22 +57,28 @@
     <hr>
 
     <h2>@navigation</h2>
-    <nav>
-        <div>IamWebDeveloper</div>
+    <nav class="navigation">
+        <div class="brand-name">IamWebDeveloper</div>
 
-        <ul>
-            <li>home</li>
-            <li>projects</li>
-            <li>about</li>
+        <ul class="non-bullet-items">
+            <li class="list-inline-item">
+                <a class="links" href="/">home</a>
+            </li>
+            <li class="list-inline-item">
+                <a class="links" href="/">projects</a>
+            </li>
+            <li class="list-inline-item">
+                <a class="links" href="/">about</a>
+            </li>
         </ul>
     </nav>
 
     <hr>
 
     <h2>@header</h2>
-    <header>
-        <img src="images/webdev.svg"/>
-        <h1>I am a web developer</h1>
+    <header class="header">
+        <img class="header-img" src="images/webdev.svg"/>
+        <h1 class="header-title">I am a web developer</h1>
     </header>
     
     <hr>
