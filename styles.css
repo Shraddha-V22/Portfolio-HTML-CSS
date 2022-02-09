@@ -50,6 +50,7 @@ hr {
      background-color: var(--main-color);
      padding: 1rem;
     margin: auto;
+    border-bottom-left-radius: 1rem;
 }
 
 .navigation .list-inline-item {
@@ -71,4 +72,6 @@ hr {
     max-width: 350px;
     padding: 1rem 1rem;
 }
+
+
 
