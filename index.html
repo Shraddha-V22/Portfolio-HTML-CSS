@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shraddha-portfolio component library</title>
+    <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
     <h2>@typography</h2>
@@ -18,17 +19,17 @@
 
     <h2>@containers</h2>
     <h1>fluid container</h1>
-    <div>this will go end to end</div>
+    <div class="container">this will go end to end</div>
 
     <h1>center container</h1>
-    <div>this will be in the center</div>
+    <div class="container container-center">this will be in the center</div>
 
     <hr>
 
     <h2>@links</h2>
 
-    <a href="/">Primary link</a>
-    <a href="/">Secondary link</a>
+    <a class="links link-primary" href="/">Primary link</a>
+    <a class="links link-secondary"  href="/">Secondary link</a>
 
     <hr>
 
@@ -77,20 +78,33 @@
     <hr>
 
     <h2>@section</h2>
-    <h1>normal section</h1>
-    <p>It is a normal section but with heading in center and padding topand bottom</p>
-
-    <h1>off white section</h1>
-    <p>the background color will be off white</p>
-
+    <section>
+        <h1>normal section</h1>
+        <p>It is a normal section but with heading in center and padding topand bottom</p>
+    </section>
+    
+    <section>
+        <h1>off white section</h1>
+        <p>the background color will be off white</p>
+    </section>
+    
     <hr>
 
     <h2>@footer</h2>
-    <ul> 
-        <li><a href="/">socialone</a></li>
-        <li><a href="/">socialtwo</a></li>
-        <li><a href="/">socialthree</a></li>
-    </ul>
+    <footer>
+        <ul> 
+            <li>
+                <a href="/">socialone</a>
+            </li>
+            <li>
+                <a href="/">socialtwo</a>
+            </li>
+            <li>
+                <a href="/">socialthree</a>
+            </li>
+        </ul>
+    </footer>
+    
 
 
 </body>
