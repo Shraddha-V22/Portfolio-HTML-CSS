@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Noto sans', sans-serif;
+    margin: 0px;
 }
 
 .container {
@@ -15,13 +16,14 @@ body {
 
 .container-center {
     max-width: 600px;
-    text-align: center;
     margin: auto;
+    text-align: center;
 }
 
 .links {
     text-decoration: none;
     color: black;
+    max-width: 150px;
 }
 .link-primary {
     padding: 0.5rem 1rem;
@@ -44,7 +46,7 @@ hr {
 
 .list .list-inline-item {
     display: inline;
-    padding: 0rem 1rem;
+    padding: 1rem 1rem;
 }
  .navigation {
      background-color: var(--main-color);
@@ -58,8 +60,17 @@ hr {
    padding: 1rem;
 }
 
-.navigation .non-bullet-items {
+.navigation .nav-pills {
     text-align: right;
+}
+
+.navigation .active-class{
+    font-weight: bold;
+}
+
+.navigation .brand-name {
+    font-weight: bold;
+    font-size: large;
 }
 
 .header {
@@ -74,7 +85,7 @@ hr {
 
 .section {
     text-align: center;
-    padding: 1rem 0rem;
+    padding: 2rem 0rem;
 }
 
 .off-white {
@@ -85,8 +96,10 @@ hr {
     background-color: var(--main-color);
     text-align: center;
     padding: 2rem;
+    border-top-right-radius: 1rem;
 }
 
 .footer .heading {
-    text-size-adjust: 20px;
+    font-weight: bold;
+    font-size: larger;
 }
