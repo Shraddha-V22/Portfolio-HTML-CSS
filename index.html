@@ -78,18 +78,18 @@
     <h2>@header</h2>
     <header class="header">
         <img class="header-img" src="images/webdev.svg"/>
-        <h1 class="header-title">I am a web developer</h1>
+        <h1 class="header-title">I am a <span style="color: var(--main-color);">web developer</span></h1>
     </header>
     
     <hr>
 
     <h2>@section</h2>
-    <section>
+    <section class="section">
         <h1>normal section</h1>
-        <p>It is a normal section but with heading in center and padding topand bottom</p>
+        <p>It is a normal section but with heading in center and padding top and bottom</p>
     </section>
     
-    <section>
+    <section class="section off-white">
         <h1>off white section</h1>
         <p>the background color will be off white</p>
     </section>
@@ -97,16 +97,17 @@
     <hr>
 
     <h2>@footer</h2>
-    <footer>
-        <ul> 
-            <li>
-                <a href="/">socialone</a>
+    <footer class="footer">
+        <div>Connect socially here</div>
+        <ul class="list"> 
+            <li class="list-inline-item">
+                <a class="links" href="/">socialone</a>
             </li>
-            <li>
-                <a href="/">socialtwo</a>
+            <li class="list-inline-item">
+                <a class="links" href="/">socialtwo</a>
             </li>
-            <li>
-                <a href="/">socialthree</a>
+            <li class="list-inline-item">
+                <a class="links" href="/">socialthree</a>
             </li>
         </ul>
     </footer>

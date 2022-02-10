@@ -2,7 +2,7 @@
 
 :root {
     --main-color: #15803d;
-
+    --off-white: #dcfce7;
 }
 
 body {
@@ -63,9 +63,8 @@ hr {
 }
 
 .header {
-    text-align: center;
-    margin: auto;
     padding: 2rem;
+    text-align: center;
 }
 
 .header .header-img {
@@ -73,5 +72,21 @@ hr {
     padding: 1rem 1rem;
 }
 
+.section {
+    text-align: center;
+    padding: 1rem 0rem;
+}
 
+.off-white {
+    background-color: var(--off-white);
+}
 
+.footer {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer .heading {
+    text-size-adjust: 20px;
+}
