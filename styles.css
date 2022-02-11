@@ -17,21 +17,21 @@ body {
 .container-center {
     max-width: 600px;
     margin: auto;
-    text-align: center;
 }
 
 .links {
     text-decoration: none;
     color: black;
     max-width: 150px;
-}
-.link-primary {
     padding: 0.5rem 1rem;
+}
+
+.link-primary {
     background-color: var(--main-color);
     border-radius: 0.7rem;
 }
+
 .link-secondary {
-    padding: 0.5rem 1rem;
     border: 1px solid var(--main-color);
     border-radius: 0.7rem;
 }
@@ -48,29 +48,33 @@ hr {
     display: inline;
     padding: 1rem 1rem;
 }
- .navigation {
-     background-color: var(--main-color);
-     padding: 1rem;
+
+.navigation {
+    background-color: var(--main-color);
+    padding: 1rem;
     margin: auto;
     border-bottom-left-radius: 1rem;
 }
 
 .navigation .list-inline-item {
-   display: inline;
-   padding: 1rem;
+    display: inline;
+    padding: 1rem;
 }
 
 .navigation .nav-pills {
     text-align: right;
+    font-size: large;
+    padding: 0rem 1rem;
 }
 
-.navigation .active-class{
+.navigation .active-class {
     font-weight: bold;
 }
 
 .navigation .brand-name {
     font-weight: bold;
-    font-size: large;
+    font-size: larger;
+    padding: 0rem 1rem;
 }
 
 .header {
@@ -84,8 +88,11 @@ hr {
 }
 
 .section {
+    padding: 5rem 1rem;
+}
+
+section h1 {
     text-align: center;
-    padding: 2rem 0rem;
 }
 
 .off-white {
@@ -102,4 +109,8 @@ hr {
 .footer .heading {
     font-weight: bold;
     font-size: larger;
+}
+
+.footer .list {
+    padding-inline-start: 0px;
 }
