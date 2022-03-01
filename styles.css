@@ -22,7 +22,7 @@ body {
 .links {
     text-decoration: none;
     color: black;
-    max-width: 100px;
+    max-width: 150px;
     padding: 0.5rem 1rem;
 }
 
@@ -113,5 +113,9 @@ section h1 {
 
 .footer .list {
     padding-inline-start: 0px;
+}
+
+footer .links {
+    padding: 0.5rem 0.2rem;
 }
 
