@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,700&display=swap');
 
 :root {
-    --main-color: #5dc580;
+    --main-color: #ffffff;
     --off-white: #b5eec6;
+    --black-color: #000000;
 }
 
 body {
@@ -55,6 +56,7 @@ hr {
     padding: 1rem;
     margin: auto;
     border-bottom-left-radius: 1rem;
+    border: 2px solid var(--black-color);
 }
 
 .navigation .list-inline-item {
