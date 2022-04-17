@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,700&display=swap');
 
 :root {
-    --main-color: #ffffff;
-    --off-white: #b5eec6;
-    --black-color: #000000;
+    --main-color: #818181;
+    --off-white: #eeecec;
 }
 
 body {
@@ -53,10 +52,9 @@ hr {
 
 .navigation {
     background-color: var(--main-color);
-    padding: 1rem;
+    padding: 0.3rem;
     margin: auto;
     border-bottom-left-radius: 1rem;
-    border: 2px solid var(--black-color);
 }
 
 .navigation .list-inline-item {
@@ -90,6 +88,13 @@ hr {
     padding: 1rem 1rem;
 }
 
+#myName {
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
 .section {
     padding: 5rem 1rem;
 }
@@ -105,7 +110,7 @@ section h1 {
 .footer {
     background-color: var(--main-color);
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     border-top-right-radius: 1rem;
 }
 
