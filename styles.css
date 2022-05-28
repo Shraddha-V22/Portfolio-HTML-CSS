@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 
 :root {
-    --main-color: #ff3838;
-    --off-white: #eeecec;
+    --first-color: #F2766B;
+    --second-color: #5ABFBF;
+    --third-color: #F2D0D3;
+    --link-color: #404040;
+    --dark-aqua: #196666; 
+    --dark-first: #ca4d41; 
 }
 
 body {
-    font-family: 'Noto sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
+    background-color: var(--second-color);
 }
 
 .container {
@@ -26,15 +31,36 @@ body {
 }
 
 .link-primary {
-    background-color: var(--main-color);
+    /* background-color: var(--link-color); */
+    border: 1px solid var(--dark-aqua);
+    color: var(--dark-aqua);
     border-radius: 0.7rem;
-    margin: 0.5rem 0.5rem;
+    margin: 1rem 0.5rem;
+    box-shadow: 0px 2px 5px -1px rgba(50, 50, 93, 0.25), 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+    display: inline-block;
+}
+
+.link-primary:hover {
+    background-color: var(--link-color);
+    color: var(--second-color);
+    border: 1px solid var(--link-color);
 }
 
 .link-secondary {
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--dark-first);
+    color: var(--dark-first);
     border-radius: 0.7rem;
-    margin: 0.5rem 0;
+    margin: 1rem 0.5rem;
+    box-shadow: 0px 2px 5px -1px rgba(50, 50, 93, 0.25), 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+    display: inline-block;
+}
+
+.link-secondary:hover {
+    background-color: var(--link-color);
+    color: var(--third-color);
+    border: 1px solid var(--link-color);
 }
 
 hr {
@@ -51,10 +77,13 @@ hr {
 }
 
 .navigation {
-    background-color: var(--main-color);
+    margin: 15px auto 0 auto;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom: 2px solid #000;
     padding: 0.3rem;
-    margin: auto;
-    border-bottom-left-radius: 1rem;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+    background-color: var(--first-color);
 }
 
 .navigation .list-inline-item {
@@ -72,16 +101,25 @@ hr {
     font-weight: bold;
 }
 
+.nav-pills .links:hover {
+    box-shadow: 0px 2px 5px -1px rgba(50, 50, 93, 0.25), 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
 .navigation .brand-name {
     font-weight: bold;
-    font-size: larger;
-    padding: 0rem 1rem;
+    font-size: 25px;
+    padding: 0.5rem 1rem;
 }
 
 .header {
-    padding: 2rem;
+    width: 95vw;
     text-align: center;
-}
+    background-color: var(--third-color);
+    margin: auto;
+    padding: 1.5rem 0.3rem;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+} 
 
 .header .header-img {
     max-width: 280px;
@@ -104,14 +142,26 @@ section h1 {
 }
 
 .off-white {
-    background-color: var(--off-white);
+    margin: auto;
+    padding: 1.5rem 0.3rem;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+    background-color: var(--third-color);
+}
+
+.navigation, .off-white, .footer {
+    /* background-color: #fff; */
+    width: 95vw;
 }
 
 .footer {
-    background-color: var(--main-color);
     text-align: center;
-    padding: 1rem;
-    border-top-right-radius: 1rem;
+    margin: 0 auto 15px auto;
+    padding: 2rem 0.3rem;
+    padding-bottom: 1.5rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+    background-color: var(--first-color);
 }
 
 .footer .heading {
@@ -125,5 +175,39 @@ section h1 {
 
 footer .links {
     padding: 0.5rem 0.2rem;
+    display: inline-block;
 }
 
+footer .links:hover {
+    box-shadow: 0px 2px 5px -1px rgba(50, 50, 93, 0.25), 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.ionicons {
+    font-size: 32px;
+}
+
+@media (max-width: 500px) {
+   .header-img {
+       width: 200px;
+   }
+
+   .navigation .links {
+       display: block;
+       padding: 5px;
+   }
+
+   .navigation, .header, .off-white, .footer {
+       max-width: 88vw;
+       margin: auto;
+   }
+
+   .navigation {
+       margin-top: 5px;
+   }
+
+   .footer {
+       margin-bottom: 5px;
+   }
+}
