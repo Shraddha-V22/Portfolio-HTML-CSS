@@ -198,6 +198,8 @@ footer .links:hover {
        padding: 5px;
    }
 
+   /* .navigation .links */
+
    .navigation, .header, .off-white, .footer {
        max-width: 88vw;
        margin: auto;
