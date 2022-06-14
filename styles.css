@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 
 :root {
-    --first-color: #F2766B;
-    --second-color: #5ABFBF;
-    --third-color: #F2D0D3;
+    --first-color: #17252a;
+    --second-color: #feffff;
+    --third-color: #def2f1;
     --link-color: #404040;
     --dark-aqua: #196666; 
-    --dark-first: #ca4d41; 
+    --aqua-nav: #31c5be; 
 }
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
     background-color: var(--second-color);
+    color: var(--first-color);
 }
 
 .container {
@@ -48,8 +49,8 @@ body {
 }
 
 .link-secondary {
-    border: 1px solid var(--dark-first);
-    color: var(--dark-first);
+    border: 1px solid var(--dark-aqua);
+    color: var(--dark-aqua);
     border-radius: 0.7rem;
     margin: 1rem 0.5rem;
     box-shadow: 0px 2px 5px -1px rgba(50, 50, 93, 0.25), 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
@@ -77,13 +78,14 @@ hr {
 }
 
 .navigation {
-    margin: 15px auto 0 auto;
+    margin: 10px auto 0 auto;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    border-bottom: 2px solid #000;
+    /* border-bottom: 2px solid #000; */
     padding: 0.3rem;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
     background-color: var(--first-color);
+    color: var(--aqua-nav);
 }
 
 .navigation .list-inline-item {
@@ -101,9 +103,12 @@ hr {
     font-weight: bold;
 }
 
+.nav-pills .links {
+    color: var(--aqua-nav);
+}
+
 .nav-pills .links:hover {
-    box-shadow: 0px 2px 5px -1px rgba(50, 50, 93, 0.25), 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
+    color: var(--third-color);
 }
 
 .navigation .brand-name {
@@ -115,10 +120,10 @@ hr {
 .header {
     width: 95vw;
     text-align: center;
-    background-color: var(--third-color);
+    /* background-color: var(--third-color); */
     margin: auto;
     padding: 1.5rem 0.3rem;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+    /* box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24); */
 } 
 
 .header .header-img {
@@ -126,15 +131,21 @@ hr {
     padding: 1rem 1rem;
 }
 
-#myName {
+#myIntro {
     font-size: 25px;
     font-weight: bold;
     display: block;
     padding-bottom: 0.5rem;
 }
 
+#myName {
+    color: var(--dark-aqua);
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
 .section {
-    padding: 5rem 1rem;
+    padding: 4rem 1rem;
 }
 
 section h1 {
@@ -143,25 +154,25 @@ section h1 {
 
 .off-white {
     margin: auto;
-    padding: 1.5rem 0.3rem;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+    padding: 1.5rem 0;
+    width: 95%;
     background-color: var(--third-color);
 }
 
-.navigation, .off-white, .footer {
-    /* background-color: #fff; */
-    width: 95vw;
+.navigation, .footer {
+    width: 95%;
 }
 
 .footer {
     text-align: center;
-    margin: 0 auto 15px auto;
-    padding: 2rem 0.3rem;
-    padding-bottom: 1.5rem;
+    margin: 2rem auto 10px auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
     background-color: var(--first-color);
+    color: var(--aqua-nav);
 }
 
 .footer .heading {
@@ -178,27 +189,33 @@ footer .links {
     display: inline-block;
 }
 
-footer .links:hover {
-    box-shadow: 0px 2px 5px -1px rgba(50, 50, 93, 0.25), 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
-    padding: 0.5rem;
-    border-radius: 5px;
-}
-
 .ionicons {
     font-size: 32px;
+    color: var(--aqua-nav);
+}
+
+.ionicons:hover {
+    color: var(--second-color);
+}
+
+.footer .attributes {
+    color: var(--aqua-nav);
+    font-size: 10px;
 }
 
 @media (max-width: 500px) {
+    body {
+        font-size: small;
+    }
+
    .header-img {
        width: 200px;
    }
 
    .navigation .links {
-       display: block;
-       padding: 5px;
+       display: inline-block;
+       padding: 2px;
    }
-
-   /* .navigation .links */
 
    .navigation, .header, .off-white, .footer {
        max-width: 88vw;
@@ -210,6 +227,7 @@ footer .links:hover {
    }
 
    .footer {
+       margin-top: 1rem; 
        margin-bottom: 5px;
    }
 }
