@@ -204,6 +204,10 @@ footer .links {
 }
 
 @media (max-width: 500px) {
+    body {
+        font-size: small;
+    }
+
    .header-img {
        width: 200px;
    }
