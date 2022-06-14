@@ -1,4 +1,6 @@
 # Portfolio-HTML-CSS
 
-This is my portfolio that I have just created and need to be updated a lot. This is also my first CSS project.  
-I need to add Blogs to it which I will do soon. and I have to add links to the projects I have created.
+Hello👋! I'm Shraddha Vishwakarma, a frontend development enthusiast. This is my portfolio.  
+  
+I am familiar with HTML5, CSS3, nodejs, vanillajs, reactjs, and I'm learning more and more everyday.  
+Since the first time I created this portfolio to now, I have made many changes to make it better and better. Hope you like it! 
