@@ -209,8 +209,8 @@ footer .links {
    }
 
    .navigation .links {
-       display: block;
-       padding: 5px;
+       display: inline-block;
+       padding: 2px;
    }
 
    .navigation, .header, .off-white, .footer {
